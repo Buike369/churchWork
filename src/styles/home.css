@@ -1,0 +1,273 @@
+.coverDiv{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+.WelcomePage{
+    background-color: #fff;
+    padding: 20px 10px;
+
+}
+.WPI{
+    width:100%;
+    max-width: 1200px;
+    margin:0  auto;
+}
+.WPI2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color:#000;
+}
+.youFirst{
+    padding:30px 10px  100px 10px;
+}
+.WPI21{
+font-size: 14px;
+font-weight: 500;
+text-align: center;
+margin-top: -3px;
+color:#525252
+}
+.WPI22{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.WPI23{
+    width:100%;
+    max-width: 120px;
+    margin: 0 auto 15px auto;
+    border-bottom: 2px solid #000;
+}
+.video {
+    object-fit: cover;
+        opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 2; */
+}
+
+.heroShim{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    border-radius: 5px;
+    background: -moz-linear-gradient(top, transparent 0%, #000 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, #000 100%);
+    background: linear-gradient(to bottom, transparent 0%, #000 100%);
+        background: #000;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    opacity: 0.5;
+}
+.heroText{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    width:100%;
+    padding:9px 10px;
+        max-width: 1200px;
+        margin:0 auto;
+    z-index: 10;
+}
+.heroText1{
+
+    width:100%;
+   
+
+}
+.heroText2 {
+    color: #fff;
+    width: 90%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+.WelcomePageP{
+    display:flex;
+}
+.WelcomePageP{
+    width:50%;
+    
+}
+.theyAre{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.theyAre1{
+    width:48%;
+}
+.heyImage{
+    width:100%;
+    height:100%
+}
+.theyAre2{
+    height: 450px;
+}
+.take2{
+ font-size: 40px;
+ font-weight: 700;
+ line-height: 45px;
+ margin-bottom: 20px;
+}
+.take3{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.place2{
+    display: flex;
+    margin-top: 20px;
+}
+.place3{
+    width:50%;
+    
+}
+.study4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.learnM{
+    margin-top: 20px;
+    padding:8px 10px;
+    background-color: #60744b;
+    color:#fff;
+    font-size: 16px;
+    width:150px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.demPY{
+    color:#60744b;
+}
+.learnM:hover{
+ background-color: #000;
+}
+.bigDIV{
+    width:100%;
+    height:700px;
+    background-color: #000;
+    position: relative;
+}
+.OurMini{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin:25px 0 5px 0;
+}
+.MiniR{
+ width:24%;
+ /* border:1px solid #000; */
+ border-radius: 6px;
+ flex-grow: 24%;
+ flex-basis: 24%;
+background-color: #000;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+}
+.OurMini2{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.OurMini1{
+    height:150px
+}
+.listenB{
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+    color:#fff
+}
+.kli{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.real1{
+    color:#fff;
+    text-align: center;
+}
+.real12{
+padding:8px 12px;
+background-color: #fff;
+color:#000;
+font-weight: 600;
+border-radius: 6px;
+width: 160px;
+margin:15px auto 0 auto
+}
+.opOp{
+    padding:20px 0px;
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.guh{
+    padding:15px ;
+}
+.OurMini3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+.OurMini4{
+        display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+.OurMini5{
+    padding:5px 10px;
+    border-radius: 6px;
+    background-color: #60744b;
+    color:#fff;
+    width:100px;
+    text-align: center;
+    margin-top: 15px;
+}
+.EmeWE{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+}
+.RM2{
+width:100px;
+margin:0  auto;
+display:flex;
+gap:6px;
+margin-bottom: 5px;
+}
+.RM3{
+width:50%;
+border-bottom: 3px solid #000;
+
+}
+.textPad98{
+    text-align: center;
+    margin-bottom: 20px;
+}
