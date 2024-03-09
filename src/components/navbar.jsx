@@ -58,24 +58,12 @@ const Header = () => {
                  {/* <div><img src="" alt="" /></div> */}
               </div>
               </a></div>
+        
             {(tr === "/register") || (tr === "/login") || (tr === "/forget-password") || (tr === "/update-password")  ? "":
             <div >
         <div className="nacBar">
            
           <ul className="NavbarUl  relativeD" >
-            <li><div href="" className="navbar1_link explore" onClick={()=>setDropdown(!dropdown)}>Events</div>
-            
-          <ul className='navbarDropD'>
-
-                  <li><a className="menuItem" href="/teach">Topic 1</a></li>
-       <li><a className="menuItem" href="/teach1">Topic 2</a></li>
-              <li><a className="menuItem" href="/teach2">Topic 3</a></li>
-              <li>Still on development </li>
-          </ul>
-          
-            </li>
-             <li><a href="" className="navbar1_link linkAB">Courses</a></li>
-              <li><a href="" className="navbar1_link linkAB">Projects</a></li>
               <li ><a href="" className="navbar1_link linkAB">Services</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Music</a></li>
                 <li><a href="#" className="navbar1_link linkAB" style={{color:feedBack1}}>Blog</a></li>
@@ -107,16 +95,16 @@ const Header = () => {
     </div>
   </div>
            <ul className="NavbarUl">
-           {/* <li><FontAwesomeIcon icon={faSearch}  className=""/> Search</li>  */}
-           {/* <li><button className='NowB'>ON</button></li> */}
+          
            <li> <div className='logInB relativeD' onClick={pushMe}>
-            {/* <a href="/register" className="navbar1_link ling">Log In</a> */}
+          
             Contact Us
             </div></li>
-           {/* <li><a href="/register" className="navbar1_link ">Join for free <FontAwesomeIcon icon={faArrowRight}  className=""/></a></li> */}
+         
            </ul>
         </div>
         }
+       
       </div>
 
 
