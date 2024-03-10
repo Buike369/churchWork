@@ -88,7 +88,7 @@ const Header = () => {
 
       <li><a className="menuItem" href="#">Services</a></li>
       <li><a className="menuItem" href="#">Music</a></li>
-      <li><a className="menuItem" href="#">Blog</a></li>
+      <li><a className="menuItem" href="#">About Us</a></li>
     </ul>
     </div>
   </div>

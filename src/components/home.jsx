@@ -50,20 +50,11 @@ const Home = () => {
        </div>
        <div className='theyAre'>
            <div className='theyAre1'>
-            <div className='take2'>Royal Grace <span className='demPY'>Redemption Chapel</span>/ God's Army General Bible Church</div>
+            <div className='take2'>About Us</div>
             <div></div>
-            <div className='take3'>We Welcome you to Royal Grace Redemption Chapel, where warmth and fellowship embrace you on your spiritual journey.</div>
-            <div className='place2'>
-               <div className='place3'>
-                  <div className='study4'>Place Of Heaven</div>
-                  <div className=''>In Royal Grace you will feel divinity, piety, goodness, faith or right beliefs.</div>
-               </div>
-               <div className='place3'>
-                  <div className='study4'>Study Bible</div>
-                  <div className=''>Learn the Bible enhance your wisdom, give you boldness about your faith</div>
-               </div>
-            </div>
-            <div className='learnM'>Learn More</div>
+            <div className='take3'>Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects. At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead. Every gathering with us is marked by the extraordinary, where miracles, signs, and wonders are a living reality. In our community, the blind see, the lame walk, the barren give birth, and the dead are given a second chance. No matter how dark the night, attending our services ensures that your day will break, and in every hopeless situation, grace and mercy will find you. We are a victorious community where failure and defeat are not options; born to win, victory is our prerogative. Join us at GAG, a home many never truly had, where love, compassion, and the passion of Christ create a sweet home in the making.</div>
+          
+          
            </div>
             <div className='theyAre1'>
               <div className="theyAre2" >
@@ -76,7 +67,7 @@ const Home = () => {
        <div className='bigDIV'>
         <div className='kli'>
         <div className='listenB'>
-          Pray! And listen to God! You can do this alone, but find somebody to do it with you
+          "Pray! And listen to God! You can do this alone, but find somebody to do it with you"
         </div>
         <div className='real1'>Real Story Cross Journey from Anna Hampton</div>
         <div className='real1 real12'>Donate Online</div>
