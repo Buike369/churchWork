@@ -16,7 +16,7 @@ const Home = () => {
 
        </video>
        <div className='coverDiv'></div>
-       <div>
+       <div className='loMO'>
        <div className='heroText'>
         <div className='heroText1'>
          <div className='heroText2'  > Experience the warmth of fellowship as we journey together in faith and growth  in Christ</div>
@@ -76,7 +76,7 @@ const Home = () => {
        <div className='bigDIV'>
         <div className='kli'>
         <div className='listenB'>
-          “Pray! And listen to God! You can do this alone, but find somebody to do it with you”
+          Pray! And listen to God! You can do this alone, but find somebody to do it with you
         </div>
         <div className='real1'>Real Story Cross Journey from Anna Hampton</div>
         <div className='real1 real12'>Donate Online</div>
@@ -91,17 +91,15 @@ const Home = () => {
     <div className='RM3'></div>
     <div className='RM3'></div>
   </div>
-  <div className='textPad98'>These are the available departments you can join to serve God within this commission</div>
+  <div className='textPad98'>Departments you can join to serve God within this commission</div>
   <div className='EmeWE'>
   {imgL.map((app,id)=>(
    <div className='MiniR' key={id}>
-     <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div>
+     {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3'>{app.name}</div>
-     <div className='OurMini4'>
-      Children mInistry is the most  important Ministry in  the church,it helps the church  build ur kids  
-     </div>
-     <div className='OurMini5'>Read More</div>
+   
+    
      </div>
    </div>
    ))}

@@ -179,7 +179,9 @@
 .FooterHead {
     margin-bottom: 10px;
     margin-top: 5px;
-    color: #fff
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
 }
 
 .footerF {
@@ -207,7 +209,7 @@
 }
 
 .footerName {
-    color: #bbbbe5;
+    color: #878787;
     text-align: left;
     width: 50%;
 }
@@ -222,7 +224,7 @@
 }
 
 .then {
-    color: #d1d1db;
+    color: #ababad;
 }
 
 .then:hover {
@@ -288,12 +290,21 @@
     padding: 2px 20px;
 }
 
-@media (max-width:768px) {
+@media (max-width:769px) {
 
     .footerMainDiv {
         flex-direction: column-reverse;
         padding: 30px 2px;
     }
+    .Weg{
+ margin-top: 15px;
+    }
+    .then {
+        padding-left: 10px;
+    }
+   .LimP{
+    padding-left: 6px;
+   }
 
     .footerW {
         flex-direction: column;
@@ -307,9 +318,9 @@
         padding: 2px 20px;
     }
 
-    .footerW {
+    /* .footerW {
         display: none;
-    }
+    } */
 
     .logoFooter {
         margin-bottom: 20px;
@@ -327,7 +338,15 @@
         padding: 40px 10px 40px 10px;
         overflow: hidden;
     }
+.footerFo {
+    width: 100%;
+}
 
+.Weg2 {
+  
+    max-width: 100%;
+    padding: 2px 8px;
+}
     .messageImg {
 
         left: -17%;
@@ -356,16 +375,45 @@
 
     .misOut1 {
         max-width: 100%;
+    padding: 1px 10px;
+        font-size: 22px;
+        color:#0bf921;
+        font-weight: 600;
+        margin-top: 25px;
+        text-transform: capitalize;
     }
-
+    .jiki{
+        display: none;
+    }
+        .FormPP{
+            max-width: 100%;
+        padding: 4px 10px;
+        }
+.yourEmail{
+    border-radius: 5px;
+}
+.nF {
+    width: 100%;
+    padding: 2px 5px;
+}
+.footerFo1 {
+    width: 100%;
+    padding: 2px 10px;
+}
     .piki {
         width: 100%
     }
+        .MobileT1 {
+            display: none;
+        }
 
 }
 
 @media (min-width:769px) {
     .MobileT1 {
+        display: none;
+    }
+    .fifi{
         display: none;
     }
 }

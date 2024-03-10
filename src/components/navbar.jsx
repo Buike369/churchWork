@@ -83,11 +83,9 @@ const Header = () => {
     </label>
      <div className="menuBox">
     <ul className="menuBox24">
-       <li><button className='loginButton'><a className="menuItem34" href="/register">Login/SignUp</a></button></li>
-      {/* <li><a className="menuItem" href="/">Login/SignUp</a></li> */}
-       <li><a className="menuItem" href="#">Explore</a></li>
-      <li><a className="menuItem " href="#">Courses</a></li>
-      <li><a className="menuItem " href="#">Projects</a></li>
+       <li><button className='loginButton'><a className="menuItem34" href="/register">Contact Us</a></button></li>
+
+
       <li><a className="menuItem" href="#">Services</a></li>
       <li><a className="menuItem" href="#">Music</a></li>
       <li><a className="menuItem" href="#">Blog</a></li>

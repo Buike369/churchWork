@@ -71,13 +71,6 @@ const Footer = () => {
 
   return (
     <div>
-
-
-
-        
-       
-
-
         <div className='footerHouse'></div>
         <div className="footerBackgroundColor">
            
@@ -98,6 +91,16 @@ const Footer = () => {
              <div className='footerHouse2'></div>
         <div>
             <div className='footerW'>
+                 <div className='nF fifi'>
+                    <ul className='footerF'>
+                        <li className='pin pin7'><div className="FooterHead LimP">Links</div></li>
+
+                        <li className='pin pin7'><a href="/project" className='then'>About Us</a></li>
+                        <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
+                        <li className='pin  pin7'><a href="#" className='then'>Contact  Us</a></li>
+                        <li className='pin1  pin6'><a href="#" className='then'>About Us</a></li>
+                    </ul>
+                </div>
                   <div className='footerFo'>
                     <div className="weg4">
                         <div className="ato2">
@@ -119,17 +122,17 @@ const Footer = () => {
                 </div>
                 </div>
                
-                <div className='nF'>
+                <div className='nF jiki'>
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead">Links</div></li>
-                        <li className='pin pin6'><a href="/courses" className='then'>Courses</a></li>
-                        <li className='pin pin7'><a href="/project" className='then'>Projects</a></li>
+
+                        <li className='pin pin7'><a href="/project" className='then'>About Us</a></li>
                         <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
                         <li className='pin  pin7'><a href="#" className='then'>Contact  Us</a></li>
                         <li className='pin1  pin6'><a href="#" className='then'>About Us</a></li>
                     </ul>
                 </div>
-                <div className='nF'>
+                <div className='nF jiki'>
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead">Latest News</div></li>
                         <li className='pin pin6'><a href="#" className='then'>Our Team</a></li>
@@ -157,42 +160,8 @@ const Footer = () => {
                
             </div>
         </div>
-         <div className='MobileT12'>
-            <div className='MobileT1'>
-                <div className='MobileT'>
-                    <div className="R1">About Us</div>
-                    <a href="/about" className='mnm mmm2'>About</a>
-                    <a href="/contact" className='mnm mmm2'> Contact Us </a>
-                    <a href="#" className='mnm mmm2'>Careers</a>
-                     <a href="#" className='mnm mmm2'>Press</a>
-                </div>
-                <div className='MobileT'>
-                    <div className="R1 R2">Products</div>
-                    <a href="/courses" className='mnm mmm1 '> Courses</a>
-                    <a href="/project" className='mnm mmm1'>Projects</a>
-                    <a href="/ebook" className='mnm mmm1'>eBooks</a>
-                    <a href="#" className='mnm mmm1'>Assessments</a>
-                </div>
-            </div>
-        </div>
-         <div className='MobileT12'>
-            <div className='MobileT1'>
-                <div className='MobileT'>
-                    <div className="R1">Legal</div>
-                    <a href="/privacy" className='mnm mmm2'>Privacy Policy </a>
-                    <a href="/terms" className='mnm mmm2'>Terms & Conditions</a>
-                    <a href="#" className='mnm mmm2'>Disclaimer</a>
-                                        <a href="#" className='mnm mmm2'>Cookie Policy</a>
-                </div>
-                <div className='MobileT'>
-                    <div className="R1 R2">Resources</div>
-                    <a href="/blog" className='mnm mmm1 '>Blog</a>
-                    <a href="#" className='mnm mmm1'>Become an Author</a>
-                    <a href="#" className='mnm mmm1'>Become an Affiliate</a>
-                    <a href="/pricing" className='mnm mmm1'>Pricing</a>
-                </div>
-            </div>
-        </div>
+       
+        
         <div className='boy'>
         <div className='footerMainDiv'>
           
