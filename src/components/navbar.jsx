@@ -22,12 +22,12 @@ const Header = () => {
     
 
       const scrollF =()=>{
-          if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+          if(document.body.scrollTop > 100  || document.documentElement.scrollTop > 100 ){
             setFeedBack('subCap')
               setFeedBack1('cap')
-          }else{
-            setFeedBack(' ')
-              setFeedBack1(' ')
+          }else {
+              setFeedBack(' ')
+              setFeedBack1(' ') 
           }
       }
 

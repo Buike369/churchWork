@@ -147,11 +147,11 @@
 }
 
 .take3 {
-    font-size: 16px;
-    /* font-weight: 500; */
+    font-size: 15px;
+    font-weight: 500;
     color:#333;
-    margin-bottom: 15px;
-        font-family: "Lato", sans-serif;
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
 }
 
 .place2 {
@@ -278,7 +278,11 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color:#cfcbcb;
 
+}
+.OurMini3B{
+    color:#000
 }
 
 .OurMini4 {
@@ -324,7 +328,17 @@
     text-align: center;
     margin-bottom: 20px;
 }
-
+.funUnit{
+    display:flex;
+    gap:10px;
+    padding:10px 15px
+}
+.funUnitA,.funUnitB{
+    width:50%;
+}
+.funUnitB{
+    padding-top: 20px;
+}
 @media(max-width:768px) {
     .heroText2 {
         font-size: 32px;
@@ -333,6 +347,7 @@
     .EmeWE {
         flex-direction: column;
         padding: 0 20px;
+        display:none;
     }
         .kli {
             position: relative;
@@ -353,6 +368,12 @@
         border-radius: 6px;
         flex-grow: 100%;
         flex-basis: 100%;
+    }
+    .addMiniR{
+        margin-bottom: 15px;
+    }
+    .addMiniRB{
+        margin-top: 15px;
     }
     .take2{
 margin-top: 15px;
@@ -396,4 +417,9 @@ margin-top: 15px;
             padding: 40px 10px;
 
     }
+}
+@media(min-width:769px){
+.funUnit{
+    display:none;
+}
 }

@@ -109,7 +109,8 @@ const Footer = () => {
                 <div className='RdCha'>Redemption Chapel</div>
                  {/* <div><img src="" alt="" /></div> */}
               </div></div>
-                   <p className='Weg2'>Royal Grace Redemption Chapel/GAG is a seasoned mandate commissioned by God for his own purpose  An Apostolic body called to carry out the Ministry Of Reconciliation, healing and deliverance to the glory of God.</p>
+                   <p className='Weg2'>Royal Grace Redemption Chapel/GAG is an Apostolic body called to carry out the Ministry Of Reconciliation, healing and deliverance to the glory of God.</p>
+                   <p className='Weg2 Weg2A'>@ no 7 Chief Anderson Amadi Avenue Adjacent  Runuagholu Market  PH</p>
                    <p className='misOut1'>Subscribe to our newsletter</p>
                    <div>
                     <form className='FormPP'>

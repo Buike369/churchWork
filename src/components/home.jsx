@@ -5,7 +5,9 @@ import Video from "./video/pp.mp4"
 
 
 const Home = () => {
-  const imgL = [{ name:"Men's Department"},{ name:"Women's Department"},{ name:"Youth Department"},{ name:"Prayer Team"},{ name:"The Royal Court Choir"},{ name:"Welfare Unit"},{ name:"Evangelism Unit"},{ name:" Ushering Unit"},{ name:"The Sanctuary Keepers"},{ name:"The Technical Unit"}]
+  const imgL = [{ name:"Men's", name1:"Department"},{ name:"Women's",  name1:" Department"},{ name:"Youth", name1:"Department"},{ name:"Prayer", name1:"Team"},{ name:"The Royal", name1:" Court Choir"},{ name:"Welfare",name1:" Unit"},{ name:"Evangelism",name1:" Unit"},{ name:" Ushering ", name1:"Unit"},{ name:"The Sanctuary", name1:" Keepers"},{ name:"The Technical", name1:" Unit"}]
+  const functionUnitA  = [{ name:"Men's", name1:"Department"},{ name:"Women's",  name1:" Department"},{ name:"Youth", name1:"Department"},{ name:"Prayer", name1:"Team"},{ name:"The Royal", name1:" Court Choir"}]
+  const functionalUnitB = [{ name:"Evangelism",name1:" Unit"},{ name:" Ushering ", name1:"Unit"},{ name:"The Sanctuary", name1:" Keepers"},{ name:"The Technical", name1:" Unit"},{ name:"Welfare",name1:" Unit"}]
   const VideoUrl =  Video
   return (
     <div>
@@ -31,7 +33,7 @@ const Home = () => {
        <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2'>Welcome to Royal Grace</div>
+        <div  className='WPI2'>Welcome to <span className='RG'>Royal Grace</span></div>
         <div className='WPI21'>Redemption Chapel</div>
         <div  className='RM2'>
     <div className='RM3'></div>
@@ -52,7 +54,11 @@ const Home = () => {
            <div className='theyAre1'>
             <div className='take2'>About Us</div>
             <div></div>
-            <div className='take3'>Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects. At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead. Every gathering with us is marked by the extraordinary, where miracles, signs, and wonders are a living reality. In our community, the blind see, the lame walk, the barren give birth, and the dead are given a second chance. No matter how dark the night, attending our services ensures that your day will break, and in every hopeless situation, grace and mercy will find you. We are a victorious community where failure and defeat are not options; born to win, victory is our prerogative. Join us at GAG, a home many never truly had, where love, compassion, and the passion of Christ create a sweet home in the making.</div>
+            <div className='take3'>Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects.  </div>
+            <div className='take3'>At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead.</div>
+            <div  className='take3'> Every gathering with us is marked by the extraordinary, where miracles, signs, and wonders are a living reality.</div>
+            <div className='take3'>In our community, the blind see, the lame walk, the barren give birth, and the dead are given a second chance. No matter how dark the night, attending our services ensures that your day will break, and in every hopeless situation, grace and mercy will find you.</div>
+            <div className='take3'>We are a victorious community where failure and defeat are not options; born to win, victory is our prerogative. Join us at GAG, a home many never truly had, where love, compassion, and the passion of Christ create a sweet home in the making.</div>
           
           
            </div>
@@ -85,15 +91,49 @@ const Home = () => {
   <div className='textPad98'>Departments you can join to serve God within this commission</div>
   <div className='EmeWE'>
   {imgL.map((app,id)=>(
+    
    <div className='MiniR' key={id}>
      {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3'>{app.name}</div>
+      <div className='OurMini3'>{app.name1}</div>
    
     
      </div>
+   
    </div>
    ))}
+   </div>
+   <div className='funUnit'>
+       <div className='funUnitA'>
+        {functionUnitA.map((app,id)=>(
+         <div className='MiniR addMiniR' key={id} >
+     {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
+     <div  className="guh">
+     <div className='OurMini3 OurMini3B'>{app.name}</div>
+      <div className='OurMini3'>{app.name1}</div>
+   
+    
+     </div>
+   
+         </div>
+         ))}
+       </div>
+       <div   className='funUnitB'>
+        {/* <div className='addMiniRB'></div> */}
+          {functionalUnitB.map((app,id)=>(
+         <div className='MiniR   addMiniRB' key={id} >
+     {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
+     <div  className="guh">
+     <div className='OurMini3  OurMini3B'>{app.name}</div>
+      <div className='OurMini3'>{app.name1}</div>
+   
+    
+     </div>
+   
+         </div>
+         ))}
+       </div>
    </div>
    </div>
       
