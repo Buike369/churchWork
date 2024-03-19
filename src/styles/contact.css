@@ -1,0 +1,161 @@
+.coverDC {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.connectWithUs {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.connectWithUs1 {
+    font-weight: bold;
+    color: #28dd6d;
+}
+
+.contactFormD {
+    display: flex;
+}
+
+.ddV {
+    width: 50%;
+}
+
+.ddV23 {
+    width: 75%;
+}
+
+.ifUs {
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.LabelCon {
+    font-size: 14px;
+    font-weight: 600;
+    color: #7c7575;
+}
+
+.inputsConnect {
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #bdc5c0;
+    margin-bottom: 12px;
+}
+
+.youCon {
+    display: flex;
+
+}
+
+.youCon1 {
+    width: 50%;
+}
+
+.youCon14 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.visitLC {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.textF {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    border: 0;
+    border: 1px solid gray;
+}
+
+.SumbitConnect {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 60px;
+    text-align: center;
+    border: 1px solid rgb(65, 194, 123);
+    margin: 20px 0 40px 0;
+    background-color: rgb(40, 221, 109);
+
+}
+
+.graceDay {
+    font-size: 28px;
+    line-height: 1.6;
+    color: #505254;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.wedDis {
+    color: #666c77;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+
+}
+
+.deed {
+    color: #666c77;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.noLike{
+    margin-right: 5px;
+    color:#28dd6d
+}
+
+@media(max-width:768px) {
+    .connectWithUs {
+        font-size: 36px;
+        margin-top: 5px;
+        text-align: justify;
+        padding: 2px 15px;
+    }
+
+    .contactFormD {
+        flex-direction: column;
+    }
+        .coverDiv17 {
+            position: relative;
+            top:0;
+            width: 100%;
+            height: 50vh;
+        }
+
+    .ddV {
+        width: 100%;
+        padding: 2px 15px
+    }
+
+    .ddV23 {
+        width: 100%;
+       
+    }
+    .ifUs{
+text-align: justify;
+    }
+        .youCon {
+            flex-direction: column;
+        }
+     .youCon1 {
+         width: 100%;
+     }
+     .cll{
+        margin-bottom: 8px;
+     }
+        
+}

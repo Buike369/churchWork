@@ -42,7 +42,7 @@ const Header = () => {
 
       const navigate = useNavigate()
   const pushMe = () =>{
-    navigate("/register")
+    navigate("/contact")
   } 
     
   return (
@@ -66,6 +66,7 @@ const Header = () => {
           <ul className="NavbarUl  relativeD" >
               <li ><a href="" className="navbar1_link linkAB">Services</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Music</a></li>
+               <li ><a href="#" className="navbar1_link linkAB">Upcoming Event</a></li>
                 <li><a href="#" className="navbar1_link linkAB" style={{color:feedBack1}}>Blog</a></li>
         
           </ul>
@@ -83,11 +84,13 @@ const Header = () => {
     </label>
      <div className="menuBox">
     <ul className="menuBox24">
-       <li><button className='loginButton'><a className="menuItem34" href="/register">Contact Us</a></button></li>
+       <li><button className='loginButton'><a className="menuItem34" href="/contact">Contact Us</a></button></li>
 
 
       <li><a className="menuItem" href="#">Services</a></li>
       <li><a className="menuItem" href="#">Music</a></li>
+      <li><a className="menuItem" href="#">Upcoming Event</a></li>
+                  
       <li><a className="menuItem" href="#">About Us</a></li>
     </ul>
     </div>

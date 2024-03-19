@@ -1,7 +1,9 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import ReactPlayer from "react-player"
+import AOS from 'aos';
 import "../styles/home.css"
 import Video from "./video/pp.mp4"
+import { useLocation } from 'react-router-dom';
 
 
 const Home = () => {
@@ -9,6 +11,13 @@ const Home = () => {
   const functionUnitA  = [{ name:"Men's", name1:"Department"},{ name:"Women's",  name1:" Department"},{ name:"Youth", name1:"Department"},{ name:"Prayer", name1:"Team"},{ name:"The Royal", name1:" Court Choir"}]
   const functionalUnitB = [{ name:"Evangelism",name1:" Unit"},{ name:" Ushering ", name1:"Unit"},{ name:"The Sanctuary", name1:" Keepers"},{ name:"The Technical", name1:" Unit"},{ name:"Welfare",name1:" Unit"}]
   const VideoUrl =  Video
+  const location = useLocation()
+  console.log(location.pathname)
+
+  useEffect(()=>{
+    AOS.init({once: true});
+    // AOS.init();
+  },[])
   return (
     <div>
       
@@ -33,8 +42,10 @@ const Home = () => {
        <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2'>Welcome to <span className='RG'>Royal Grace</span></div>
-        <div className='WPI21'>Redemption Chapel</div>
+        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Enter the realm of royal elegance at  Royal Grace  </div>
+       
+        
+        <div className='WPI21' data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">Redemption Chapel</div>
         <div  className='RM2'>
     <div className='RM3'></div>
     <div className='RM3'></div>
@@ -52,7 +63,7 @@ const Home = () => {
        </div>
        <div className='theyAre'>
            <div className='theyAre1'>
-            <div className='take2'>About Us</div>
+            <div className='take2'>WELCOME</div>
             <div></div>
             <div className='take3'>Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects.  </div>
             <div className='take3'>At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead.</div>
@@ -64,7 +75,7 @@ const Home = () => {
            </div>
             <div className='theyAre1'>
               <div className="theyAre2" >
-              <img src="/img/pastor.jpeg" alt="" className='heyImage'/>
+              <img src="/img/pastor.jpeg" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
               </div>
             </div>
        </div>
@@ -107,7 +118,7 @@ const Home = () => {
    <div className='funUnit'>
        <div className='funUnitA'>
         {functionUnitA.map((app,id)=>(
-         <div className='MiniR addMiniR' key={id} >
+         <div className='MiniR addMiniR' key={id} data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">
      {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3 OurMini3B'>{app.name}</div>
@@ -122,7 +133,7 @@ const Home = () => {
        <div   className='funUnitB'>
         {/* <div className='addMiniRB'></div> */}
           {functionalUnitB.map((app,id)=>(
-         <div className='MiniR   addMiniRB' key={id} >
+         <div className='MiniR   addMiniRB' key={id} data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">
      {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3  OurMini3B'>{app.name}</div>

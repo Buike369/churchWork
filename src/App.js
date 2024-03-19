@@ -10,6 +10,7 @@ import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import Home from "./components/home"
 import Login from "./components/login"
+import Contact from "./components/contact"
 
 
 const Layout = () => {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />
       },
+      {
+        path: "/contact",
+        element: <Contact />
+      },
+      
      
     ]
   },
@@ -38,6 +44,7 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+ 
   // {
   //   path: "/forget-password",
   //   element: <ForgotPassword />,

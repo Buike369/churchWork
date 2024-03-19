@@ -82,6 +82,9 @@
     font-size: 14px;
     color:#6d6d6e
 }
+.hideMe{
+    display:none;
+}
 
 .footerIconDivL {
     background-color: #fff;

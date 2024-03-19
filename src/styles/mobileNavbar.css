@@ -67,7 +67,7 @@
     bottom: 0;
     height: 100vh;
     margin: 0;
-    background: #080a0869;
+    background: #080a08b8;
     -webkit-backdrop-filter: blur(300px);
     backdrop-filter: blur(300px);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -96,8 +96,9 @@
     padding: 6px 8px;
     border: 1px solid gray;
     border-radius: 6px;
-    background-color: #232334;
+background-color: #296836;
     margin-left: 24px;
+    margin-bottom: 10px;
 }
 
 .menuItem {

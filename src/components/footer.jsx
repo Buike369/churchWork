@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import "../styles/footer.css"
 
 
@@ -7,14 +7,19 @@ import validator from 'validator';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons"
+import { useLocation } from 'react-router-dom';
 import {faLinkedinIn,faTwitter,faDiscord,faGithub,faTelegram,faYoutube, faFacebookF} from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
+    const [hideMe,setHideMe] = useState("")
      const [inputs,setInputs] = useState({
     email:""
   })
       const [error,setError]=useState("")
      const [messages,setMessages]=useState("")
+
+     const location = useLocation()
+  const path = location.pathname;
 
    const changeHandle4 =(e)=>{
 
@@ -66,11 +71,18 @@ const Footer = () => {
 //     } 
 //   }
 
+useEffect(()=>{
+    if(path === "/contact"){
+       setHideMe("hideMe") 
+    }else{
+             setHideMe("") 
+    }
+},[])
 
 
 
   return (
-    <div>
+    <div className={hideMe}>
         <div className='footerHouse'></div>
         <div className="footerBackgroundColor">
            
@@ -88,6 +100,7 @@ const Footer = () => {
             </div>
          
             </div> */}
+            <div >
              <div className='footerHouse2'></div>
         <div>
             <div className='footerW'>
@@ -160,6 +173,7 @@ const Footer = () => {
                 </div>
                
             </div>
+        </div>
         </div>
        
         
