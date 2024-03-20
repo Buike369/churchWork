@@ -15,20 +15,21 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 20px auto 0 auto;
-    background-color: #0c0c0e;
+    background-color: #1c262299;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;;
 }
 
 .footerHouse {
     width: 100%;
-    height: 50px;
-    background-color: #000000;
+    height: 40px;
+    background-color: #000;
     /* background-image: linear-gradient(to bottom right, #8d85cf, #120d6854); */
 }
 
 .footerHouse2 {
     width: 100%;
-    height: 50px;
-    background-color: #000000;
+    /* height: 50px; */
+    background-color: #000;
     /* background-image: linear-gradient(to bottom right, #8d85cf, #120d6854); */
 }
 
@@ -71,7 +72,7 @@
 }
 
 .Weg2 {
-    color: #d1d1db;
+    color: #fff;
     /* text-align: center; */
     font-size: 16px;
     width: 100%;
@@ -80,7 +81,7 @@
 }
 .Weg2A{
     font-size: 14px;
-    color:#6d6d6e
+    color:#ced5d2;
 }
 .hideMe{
     display:none;
@@ -144,7 +145,7 @@
 .misOut1 {
     line-height: 22px;
     font-size: 16px;
-    color: #f9f5f5;
+    color: #fff;
     margin-top: 10px;
     width: 100%;
     max-width: 80%;
@@ -203,8 +204,7 @@
 }
 
 .footerBackgroundColor {
-    /* background-color: #3e3794; */
-    background-color: #000000;
+background-color: #000000;
     padding: 10px 0 0px 0;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .footerName {
-    color: #878787;
+    color: #ced5d2;
     text-align: left;
     width: 50%;
 }
@@ -231,7 +231,7 @@
 }
 
 .then {
-    color: #ababad;
+    color: #ced5d2;
 }
 
 .then:hover {
@@ -366,9 +366,9 @@
         border-right: none;
     }
 
-    .footerHouse {
+    /* .footerHouse {
         height: 20px;
-    }
+    } */
 
 
     .footerHouse2 {
@@ -384,7 +384,7 @@
         max-width: 100%;
     padding: 1px 10px;
         font-size: 22px;
-        color:#0bf921;
+        color:#fff;
         font-weight: 600;
         margin-top: 25px;
         text-transform: capitalize;

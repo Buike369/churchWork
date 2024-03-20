@@ -19,10 +19,11 @@ const Contact = () => {
         {/* header div */}
         <div>
                 <div >
-       <video  width="560" height ="315" autoPlay loop muted className='video1' >
+       {/* <video  width="560" height ="315" autoPlay loop muted className='video1' >
         <source src={VideoUrl} type="video/mp4"/>
 
-       </video>
+       </video> */}
+       <img src="/img/ccc.jpeg" alt="" className='video1'/>
        <div className='coverDiv1 coverDiv17'></div>
        <div className='loMO'>
        <div className='heroText77'>
@@ -71,7 +72,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div>
-                                <div>Message *</div>
+                                <div className='messA'>Message *</div>
                                 <div>
                                     <textarea className='textF'>
                                     </textarea>
@@ -112,7 +113,7 @@ const Contact = () => {
             </div>
         </div>
           <div className='boy'>
-        <div className='footerMainDiv'>
+        <div className='footerMainDiv  lij'>
           
             <div className='footerName' >
                 © 2024 RoyalGrace Redemption Chapel . All Rights Reserved

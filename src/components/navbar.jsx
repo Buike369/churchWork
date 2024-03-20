@@ -67,7 +67,7 @@ const Header = () => {
               <li ><a href="" className="navbar1_link linkAB">Services</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Music</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Upcoming Event</a></li>
-                <li><a href="#" className="navbar1_link linkAB" style={{color:feedBack1}}>Blog</a></li>
+                <li><a href="#" className="navbar1_link linkAB" style={{color:feedBack1}}>About</a></li>
         
           </ul>
           
@@ -91,7 +91,7 @@ const Header = () => {
       <li><a className="menuItem" href="#">Music</a></li>
       <li><a className="menuItem" href="#">Upcoming Event</a></li>
                   
-      <li><a className="menuItem" href="#">About Us</a></li>
+      <li><a className="menuItem" href="/about">About Us</a></li>
     </ul>
     </div>
   </div>

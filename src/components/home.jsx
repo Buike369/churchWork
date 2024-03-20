@@ -118,7 +118,7 @@ const Home = () => {
    <div className='funUnit'>
        <div className='funUnitA'>
         {functionUnitA.map((app,id)=>(
-         <div className='MiniR addMiniR' key={id} data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">
+         <div className='MiniR addMiniR' key={id} data-aos="fade-up"  data-aos-duration="3000">
      {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3 OurMini3B'>{app.name}</div>

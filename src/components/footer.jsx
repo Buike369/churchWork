@@ -108,10 +108,10 @@ useEffect(()=>{
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead LimP">Links</div></li>
 
-                        <li className='pin pin7'><a href="/project" className='then'>About Us</a></li>
+                        <li className='pin pin7'><a href="/about" className='then'>About Us</a></li>
                         <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
-                        <li className='pin  pin7'><a href="#" className='then'>Contact  Us</a></li>
-                        <li className='pin1  pin6'><a href="#" className='then'>About Us</a></li>
+                        <li className='pin  pin7'><a href="/contact" className='then'>Contact  Us</a></li>
+                        <li className='pin1  pin6'><a href="/about" className='then'>About Us</a></li>
                     </ul>
                 </div>
                   <div className='footerFo'>
@@ -140,10 +140,10 @@ useEffect(()=>{
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead">Links</div></li>
 
-                        <li className='pin pin7'><a href="/project" className='then'>About Us</a></li>
+                        <li className='pin pin7'><a href="/about" className='then'>About Us</a></li>
                         <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
-                        <li className='pin  pin7'><a href="#" className='then'>Contact  Us</a></li>
-                        <li className='pin1  pin6'><a href="#" className='then'>About Us</a></li>
+                        <li className='pin  pin7'><a href="/contact" className='then'>Contact  Us</a></li>
+                        <li className='pin1  pin6'><a href="/about" className='then'>About Us</a></li>
                     </ul>
                 </div>
                 <div className='nF jiki'>

@@ -11,6 +11,7 @@ import Footer from "./components/footer"
 import Home from "./components/home"
 import Login from "./components/login"
 import Contact from "./components/contact"
+import AboutUs from "./components/aboutUs"
 
 
 const Layout = () => {
@@ -36,7 +37,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
-      
+      {
+        path: "/about",
+        element: <AboutUs />
+      },
      
     ]
   },

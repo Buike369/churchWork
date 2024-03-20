@@ -7,6 +7,9 @@
 body{
     /* background-color: #60744b; */
       /* background-color: #60744b73; */
-      color:#000;
+      color:#fff;
+      /* background-image: linear-gradient(0deg, #beefdcb5 0, #7ca997) */
+            /* background-image: linear-gradient(0deg, #c3ebdb 0, #45d7809e) */
       /* overflow-x: hidden !important; */
+      background-image: linear-gradient(0deg, #50aa84 0, #1a1e28);
 }
