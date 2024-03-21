@@ -3,6 +3,8 @@ import ReactPlayer from "react-player"
 import AOS from 'aos';
 import "../styles/home.css"
 import Video from "./video/pp.mp4"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { useLocation } from 'react-router-dom';
 
 
@@ -13,6 +15,24 @@ const Home = () => {
   const VideoUrl =  Video
   const location = useLocation()
   console.log(location.pathname)
+
+  const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
   useEffect(()=>{
     AOS.init({once: true});
@@ -30,7 +50,43 @@ const Home = () => {
        <div className='loMO'>
        <div className='heroText'>
         <div className='heroText1'>
-         <div className='heroText2'  > Experience the warmth of fellowship as we journey together in faith and growth  in Christ</div>
+          <Carousel
+  swipeable={false}
+  draggable={false}
+  showDots={false}
+  responsive={responsive}
+  ssr={true} // means to render carousel on server-side.
+  infinite={true}
+  autoPlay ={true}
+  // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+  autoPlaySpeed={6000}
+  keyBoardControl={true}
+  customTransition="all .5"
+  transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+  // deviceType={this.props.deviceType}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px"
+>
+  <div> <div className='heroText2'  > Experience the warmth of fellowship as we journey together in faith and growth  in Christ </div>
+  <div className='NewEvents'>New Events</div></div>
+  
+  <div> <div className='heroText2'  > Discover the beauty of belonging, the power of unity, and the joy of walking together in faith</div>
+  <div className='NewEvents'>New Events</div></div>
+  <div> <div className='heroText2'  > Join us as we embark on a transformative journey with christ</div>
+  <div className='NewEvents'>New Events</div></div>
+  <div>
+     <div className='heroText2'  ><div className='graceDay'>Grace Encounter Days! </div>
+                        <div className='wedDis dav'>Wed: Hosanna Prophetic (HP) Hour- 5PM. </div>
+                        <div  className='wedDis dav'>Fri: Mercy Supernatural Service (MSS)- 10AM. </div>
+                        <div  className='wedDis dav'>Sun: Glory Reign Service (GRS)- 8AM </div>
+                        <div  className='wedDis dav'>3rd Fridays: Ebenezer Night Of Answers(ENOA)- 9PM Till Dawn</div></div>
+                        <div className='NewEvents'>New Events</div>
+                        </div>
+</Carousel>
+         {/* <div className='heroText2'  > Experience the warmth of fellowship as we journey together in faith and growth  in Christ</div> */}
+         {/* <div className='NewEvents'>New Events</div> */}
         </div>
         
        </div>
@@ -42,15 +98,15 @@ const Home = () => {
        <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Enter the realm of royal elegance at  Royal Grace  </div>
+        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Welcome to a journey of faith, hope, and endless possibilities.</div>
        
         
-        <div className='WPI21' data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">Redemption Chapel</div>
+       
         <div  className='RM2'>
     <div className='RM3'></div>
     <div className='RM3'></div>
   </div>
-        <div className='WPI22'>Join us in our  activities </div>
+       
         <div className='WelcomePageP'>
           <div className='WelcomePageP1 WelcomePageP2'>
 
@@ -75,11 +131,14 @@ const Home = () => {
            </div>
             <div className='theyAre1'>
               <div className="theyAre2" >
-              <img src="/img/pastor.jpeg" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
+              <img src="/img/app.jpeg" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
               </div>
             </div>
        </div>
        </div>
+
+       {/* another sectio */}
+       
 
        <div className='bigDIV'>
         <div className='kli'>
