@@ -26,11 +26,7 @@ const AboutUs = () => {
        <div className='heroText77'>
         <div className='heroText1'>
          <div className='heroText2'  > We love and care for people</div>
-         <div>join Us in our activity</div>
-         <div>Wed: 5PM Hosanna Prophetic.</div>
-         <div>Fri: 10AM Mercy Service </div>
-          <div>Sun: 8AM  Glory Reign Service </div>
-         <div>New Here</div>
+       
         </div>
         
        </div>
@@ -82,9 +78,17 @@ const AboutUs = () => {
        {/* end section1 */}
 
        {/* section2 */}
-       <div>
-          <div>The things we love to do best</div>
-          <div></div>
+       <div className='CnkkL'>
+       <div className='AboutUsCnk'  >
+          <div className='Cbb1'>Join Us In Our Services today</div>
+          <div>
+             
+         <div  className='Cbb3'>Wed: 5PM Hosanna Prophetic.</div>
+         <div  className='Cbb3'>Fri: 10AM Mercy Service </div>
+          <div  className='Cbb3'>Sun: 8AM  Glory Reign Service </div>
+         <div  className='Cbb4 Cbb3'>New Here</div>
+          </div>
+       </div>
        </div>
 
     </div>

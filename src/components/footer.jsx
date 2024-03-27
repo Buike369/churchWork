@@ -4,6 +4,8 @@ import "../styles/footer.css"
 
 import axios from "axios"
 import validator from 'validator';
+import Modal  from './modal'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from "@fortawesome/free-solid-svg-icons"
@@ -15,6 +17,8 @@ const Footer = () => {
      const [inputs,setInputs] = useState({
     email:""
   })
+  const [modalImageUrl,setModalImageUrl] = useState(null)
+
       const [error,setError]=useState("")
      const [messages,setMessages]=useState("")
 
@@ -26,8 +30,17 @@ const Footer = () => {
     setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
   
   }
- const socialLink = [{icon:faTwitter,link:"https://x.com/ChukwubuikeK?t=Ksk86TowzZrQ7X_21swBIg&s=09"},{icon:faFacebookF,link:"https://www.facebook.com/profile.php?id=100070000591981&mibextid=ZbWKwL"},{icon:faTelegram,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
+ const socialLink = [{icon:faTwitter,link:"https://x.com/ChukwubuikeK?t=Ksk86TowzZrQ7X_21swBIg&s=09"},{icon:faFacebookF,link:"https://www.facebook.com/apostleprincedmoon.onyenkpa?mibextid=JRoKGi"},{icon:faTelegram,link:"https://t.me/drmoon_p"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
 
+
+ 
+  const handleImageClick = (imageUrl)=>{
+    setModalImageUrl(imageUrl);
+
+  }
+  const handleCloseModal=()=>{
+    setModalImageUrl(null)
+  }
 //    const postInfo1 =(e)=>{
 // e.preventDefault()
 //     if( inputs.email.length === 0 ){
@@ -161,10 +174,10 @@ useEffect(()=>{
                         <li className='pin pin7'><div className="FooterHead">Activity Photo</div></li>
                         <li className='pin pin6'>
                             <div className='guideDivs'>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4'/></div>
-                                <div  className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4'/></div>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4'/></div>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4'/></div>
+                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
+                                <div  className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
+                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
+                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
                             </div>
                             </li>
                       
@@ -216,6 +229,9 @@ useEffect(()=>{
      </div>
      </div>
       }
+
+
+      {modalImageUrl && <Modal imageUrl={modalImageUrl} onClose={handleCloseModal} />}
     </div>
   )
 }

@@ -1,0 +1,30 @@
+.AboutUsCnk{
+
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.CnkkL{
+    padding:20px 10px;
+    background-color: #fff;
+    color:#000
+}
+.Cbb1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+}
+.Cbb3{
+    font-size: 18px;
+    text-align: center;
+    color:#000;
+    line-height: 35px;
+}
+.Cbb4{
+    padding:5px 15px;
+    border: 1px solid #000;
+    width:150px;
+    margin:0 auto;
+    border-radius: 8px;
+}

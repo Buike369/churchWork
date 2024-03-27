@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import {
   createBrowserRouter,
@@ -41,14 +41,14 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutUs />
       },
-     
+
     ]
   },
   {
     path: "/login",
     element: <Login />,
   },
- 
+
   // {
   //   path: "/forget-password",
   //   element: <ForgotPassword />,
@@ -68,8 +68,37 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+
+  const [locationTitle, setLocationTitle] = useState("Welcome to")
+  useEffect(() => {
+    const aboutUs = `${locationTitle} - Royal Grace Redemption center`
+    const locate = window.location.pathname;
+    const handleTitleChange = () => {
+      if (locate === "/") {
+        setLocationTitle('Welcome to')
+        document.title = aboutUs
+      } else if (locate === "/about") {
+        setLocationTitle('About Us')
+        document.title = aboutUs
+      } else if (locate === "/contact") {
+        setLocationTitle('Contact Us at');
+        document.title = aboutUs
+      } else {
+        setLocationTitle('Welcome to')
+        document.title = aboutUs
+      }
+      // document.title = window.location.pathname;
+
+    }
+    handleTitleChange()
+
+    window.addEventListener('popstate', handleTitleChange)
+    return () => {
+      window.removeEventListener('popstate', handleTitleChange)
+    }
+  }, [])
   return (
-  
+
     <div>
       <RouterProvider router={router} />
     </div>

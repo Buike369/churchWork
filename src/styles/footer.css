@@ -15,7 +15,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 20px auto 0 auto;
-    background-color: #1c262299;
+    background-color: #44444436;
      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;;
 }
 
@@ -401,7 +401,7 @@ background-color: #000000;
 }
 .nF {
     width: 100%;
-    padding: 2px 5px;
+    padding: 2px 0px;
 }
 .footerFo1 {
     width: 100%;

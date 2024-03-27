@@ -142,6 +142,8 @@
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-top: 2px solid  green;
+    position:relative;
+    z-index: 30;
     /* border-radius: 8px; */
     /* border-bottom-left-radius: 8px; */
     border-top-left-radius: 12px;
@@ -268,7 +270,7 @@
 
 .bigDIV {
     width: 100%;
-    height: 700px;
+
     background-color: #000000;
         /* background-color: #0093E9; */
             background-image: linear-gradient(160deg, #d3efe6 0%, #80bca8 100%);
@@ -328,10 +330,9 @@
 }
 
 .kli {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   width:100%;
+   max-width: 1200px;
+   margin:0 auto;
 }
 
 .real1 {
@@ -347,6 +348,58 @@
     border-radius: 6px;
     width: 160px;
     margin: 15px auto 0 auto
+}
+.real14{
+    text-align: center;
+    color: #000000e0;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+.NeEven{
+    width:100%;
+    max-width: 1200px;
+    margin:30px auto ;
+}
+.lllM1{
+    width:250px;
+    background-color: #fff;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+.lllM2{
+    color:#000;
+    padding: 15px 10px;
+    
+}
+.LNPM{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform:capitalize ;
+    text-align: center;
+}
+.HECT{
+    text-align: center;
+    width:70%;
+    margin: 0 auto 20px auto;
+}
+
+.lllM{
+    height: 200px;
+}
+.jpl{
+    width:100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+}
+.jpl{
+
 }
 
 .opOp {
@@ -415,26 +468,47 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
-    padding: 2px 15px;
+    padding: 2px 10px;
     /* color:#257639 */
 }
 .funUnit{
     display:flex;
     gap:10px;
-    padding:10px 15px
+    padding:10px 10px
 }
 .funUnitA,.funUnitB{
     width:50%;
 }
+.carousel-button-group{
+position: absolute;
+right:10px;
+display: flex;
+gap:10px;
+margin-top: 10px;
+}
 .funUnitB{
     padding-top: 20px;
 }
+.postKin{
+padding:5px;
+background-color: #fff;
+color:#000;
+border-radius: 5px;
+}
+
 @media(max-width:768px) {
     .heroText2 {
         font-size: 32px;
         width:100%;
         padding:2px 5px;
         
+    }
+    .lllM1{
+        width:98%
+    }
+    .youReM{
+        padding-left: 10px;
+        padding-bottom: 20px;
     }
 
     .EmeWE {
