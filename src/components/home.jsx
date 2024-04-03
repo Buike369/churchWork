@@ -3,13 +3,14 @@ import ReactPlayer from "react-player"
 import AOS from 'aos';
 import "../styles/home.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons"
+import {faArrowRight,faArrowLeft} from "@fortawesome/free-solid-svg-icons"
 
 import Video from "./video/pp.mp4"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useLocation } from 'react-router-dom';
 import Modal  from './modal'
+import Donate from "./donate"
 
 
 const Home = () => {
@@ -19,16 +20,18 @@ const Home = () => {
   const VideoUrl =  Video
   const location = useLocation()
   // console.log(location.pathname)
+  const [donateModal,setDonateModal] = useState(null)
+
 
   // const [modalImageUrl,setModalImageUrl] = useState(null)
 
-  // const handleImageClick = (imageUrl)=>{
-  //   setModalImageUrl(imageUrl);
+  const handleDonateClick = ()=>{
+    setDonateModal(!donateModal);
 
-  // }
-  // const handleCloseModal=()=>{
-  //   setModalImageUrl(nul)
-  // }
+  }
+  const handleCloseDonate=()=>{
+    setDonateModal(null)
+  }
 
   const cardEvent =["king",'king','king','king','king','king','king']
 
@@ -71,25 +74,42 @@ const Home = () => {
     slidesToSlide: 1 // optional, default to 1.
   } 
 };
+const responsive2 = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2,
+    partialVisibilityGutter: 40,
+    slidesToSlide: 1 // optional, default to 1.
+
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    partialVisibilityGutter: 40,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 40,
+    slidesToSlide: 1 // optional, default to 1.
+  } 
+};
  
 const ButtonOne =({onClick})=>{
   return(
-    <div className='postKin' onClick={onClick}>1</div>
+    <div className='postKin' onClick={onClick}><FontAwesomeIcon icon={faArrowLeft}   style={{fontSize:"15px"}} /></div>
   )
 }
 
 const ButtonTwo =({onClick})=>{
   return(
-    <div className='postKin' onClick={onClick}>2</div>
+    <div className='postKin' onClick={onClick}><FontAwesomeIcon icon={faArrowRight}   style={{fontSize:"15px"}} /></div>
   )
 };
 
 
-const ButtonThree =({onClick})=>{
-  return(
-    <div className='postKin' onClick={onClick}>3</div>
-  )
-}
+
 
 
 const CustomDot = ({ onClick, ...rest }) => {
@@ -119,7 +139,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     <div className="carousel-button-group"> 
       <ButtonOne className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} />
       <ButtonTwo onClick={() => next()} />
-      <ButtonThree onClick={() => goToSlide(currentSlide + 1)}> Go to any slide </ButtonThree>
+     
     </div>
   );
 };
@@ -236,17 +256,25 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        {/* another sectio */}
 
   <div className='NeEven'>
-     <div className='LNPM'> Latest News</div>
+     <div className='LNPM'>Events</div>
+
+      <div  className='RM2'>
+    <div className='RM3'></div>
+    <div className='RM3'></div>
+  </div>
      <div className='HECT'>Happenings, Events and Updates in the Ministry</div>
 <div className='youReM'>
            <Carousel
   swipeable={false}
   draggable={false}
-  showDots={false}
+  showDots={true}
   responsive={responsive1}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay ={true}
+   arrows={false} 
+   renderButtonGroupOutside={true}
+    customButtonGroup={<ButtonGroup />}
   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
   autoPlaySpeed={4000}
   keyBoardControl={true}
@@ -262,7 +290,8 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
    {cardEvent.map((app,id)=>(
      <div className='lllM1' key={id}>
       <div className='lllM'><img src="/img/ccc.jpeg" alt="" className='jpl' /></div>
-      <div className='lllM2' >REMEMBER ME, OH LORD – PST. PRINCEDMOON O GODWIN</div>
+      <div className='cardTheme' >REMEMBER ME, OH LORD </div>
+      <div className='namePastor'><span>By</span>  PST. PRINCEDMOON O GODWIN </div>
      </div>
      ))}
 </Carousel>
@@ -286,7 +315,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
           "Embrace the opportunity to become a fervent mission partner or volunteer today"
         </div>
         <div className='real14'>As a dedicated partner in the Royal Grace or GAG mission, you have the opportunity to embark on a transformative journey, bringing the healing, prophetic, and deliverance power of God to people and nations worldwide. Whether through sponsorship, partnership, or contributing regularly, be it weekly, monthly, or yearly, as a one-time giver or faithful tither, your commitment fuels this life-changing chariot. Additionally, as a volunteer, you can play a vital role by coordinating, donating, or offering your residence, vacant community space, or available land for kingdom service, whether as a fellowship center, crusade ground, or Church branch</div>
-        <div className=' real1 real12'>Donate Online</div>
+        <div className=' real1 real12' onClick={handleDonateClick}>Donate Online</div>
         </div>
        </div>
 
@@ -294,14 +323,18 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        {/* another Section */}
 
         <div className='NeEven'>
-     <div className='LNPM'> Latest News</div>
-     <div className='HECT'>Happenings, Events and Updates in the Ministry</div>
+     <div className='LNPM'>Powerful Testimonies</div>
+      <div  className='RM2'>
+    <div className='RM3'></div>
+    <div className='RM3'></div>
+  </div>
+     <div className='HECT'>God is still doing miracles as in the days of old. Experience what God has done in the lives of these brethren.</div>
 <div className='youReM'>
            <Carousel
   swipeable={false}
   draggable={false}
   showDots={true}
-  responsive={responsive1}
+  responsive={responsive2}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay ={true}
@@ -325,9 +358,14 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
   itemClass="carousel-item-padding-40-px"
 >
    {cardEvent.map((app,id)=>(
-     <div className='lllM1' key={id}>
-      <div className='lllM'><img src="/img/ccc.jpeg" alt="" className='jpl' /></div>
-      <div className='lllM2' >REMEMBER ME, OH LORD – PST. PRINCEDMOON O GODWIN</div>
+     <div className='loo' key={id}>
+     <div className='giveLet'>
+        <div className='letGive'><img src="/img/past.jpeg" alt="" className='jpl5' /></div>
+        <div className='letGive1'>
+          <div className='loremT'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.</div>
+        <div className='lllM2' ><span className='testName'>Kingsley Chuks</span> - <span className='Members'>Member</span></div>
+        </div>
+      </div>
      </div>
      ))}
 
@@ -400,8 +438,8 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
    </div>
       
 
-     
-    </div>
+      {donateModal && <Donate  onClose={handleCloseDonate}  onClick={handleDonateClick}/>}
+         </div>
   )
 }
 

@@ -23,7 +23,7 @@ a {
     -webkit-transform: translateY(30px);
     transition: transform .3s linear;
     width: 100%;
-    z-index: 1225;
+    z-index: 12250;
     background:#6bb59766;
     /* background-color: #24744866; */
     -webkit-backdrop-filter: blur(300px);

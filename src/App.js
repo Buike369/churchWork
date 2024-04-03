@@ -69,23 +69,21 @@ const router = createBrowserRouter([
 
 function App() {
 
-  const [locationTitle, setLocationTitle] = useState("Welcome to")
+  // const [locationTitle, setLocationTitle] = useState("Welcome to")
+  const locate = window.location.pathname;
   useEffect(() => {
-    const aboutUs = `${locationTitle} - Royal Grace Redemption center`
-    const locate = window.location.pathname;
+    
+    
     const handleTitleChange = () => {
       if (locate === "/") {
-        setLocationTitle('Welcome to')
-        document.title = aboutUs
-      } else if (locate === "/about") {
-        setLocationTitle('About Us')
-        document.title = aboutUs
+        
+        document.title = " Welcome to - Royal Grace Redemption center"
+      } else if (locate === "/about"){
+        document.title = "About Us - Royal Grace Redemption center "
       } else if (locate === "/contact") {
-        setLocationTitle('Contact Us at');
-        document.title = aboutUs
+        document.title = "Contact us at - Royal Grace Redemption center "
       } else {
-        setLocationTitle('Welcome to')
-        document.title = aboutUs
+        document.title = "Welcome to - Royal Grace Redemption center "
       }
       // document.title = window.location.pathname;
 

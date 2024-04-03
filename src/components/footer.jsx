@@ -154,12 +154,12 @@ useEffect(()=>{
                         <li className='pin pin7'><div className="FooterHead">Links</div></li>
 
                         <li className='pin pin7'><a href="/about" className='then'>About Us</a></li>
-                        <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
+                        <li className='pin  pin6'><a href="/" className='then'>Upcoming Event</a></li>
                         <li className='pin  pin7'><a href="/contact" className='then'>Contact  Us</a></li>
-                        <li className='pin1  pin6'><a href="/about" className='then'>About Us</a></li>
+                        <li className='pin1  pin6'><a href="/" className='then'>Programs</a></li>
                     </ul>
                 </div>
-                <div className='nF jiki'>
+                {/* <div className='nF jiki'>
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead">Latest News</div></li>
                         <li className='pin pin6'><a href="#" className='then'>Our Team</a></li>
@@ -168,7 +168,7 @@ useEffect(()=>{
                         <li className='pin  pin7'><a href="#" className='then'>Careers</a></li>
                         <li className='pin1  pin6'><a href="#" className='then'>Press</a></li>
                     </ul>
-                </div>
+                </div> */}
                 <div className='footerFo1'>
                     <ul className='footerF'>
                         <li className='pin pin7'><div className="FooterHead">Activity Photo</div></li>

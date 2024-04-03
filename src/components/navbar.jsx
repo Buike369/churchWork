@@ -52,10 +52,12 @@ const Header = () => {
       <div className="Navbar relativeD">
 
             <div className='NavLogoNa'><a href="/" className="Brand">
+             <div className='lokolo'> <img src="/img/kolo.jpeg" alt="" className='ImgLogo' />
               <div className='pRoG relativeD'>
                 <div className='royalGrace'>ROYAL GRACE</div>
                 <div className='RdCha'>Redemption Chapel</div>
                  {/* <div><img src="" alt="" /></div> */}
+              </div>
               </div>
               </a></div>
         
@@ -87,9 +89,9 @@ const Header = () => {
        <li><button className='loginButton'><a className="menuItem34" href="/contact">Contact Us</a></button></li>
 
 
-      <li><a className="menuItem" href="#">Services</a></li>
+      <li><a className="menuItem" href="/about">About Us</a></li>
       <li><a className="menuItem" href="#">Music</a></li>
-      <li><a className="menuItem" href="#">Upcoming Event</a></li>
+      <li><a className="menuItem" href="/">Upcoming Event</a></li>
                   
       <li><a className="menuItem" href="/about">About Us</a></li>
     </ul>
@@ -97,10 +99,11 @@ const Header = () => {
   </div>
            <ul className="NavbarUl">
           
-           <li> <div className='logInB relativeD' onClick={pushMe}>
+           <li> <a href="/contact"><div className='logInB relativeD' >
           
             Contact Us
-            </div></li>
+            </div>
+            </a></li>
          
            </ul>
         </div>
