@@ -33,7 +33,7 @@ const Home = () => {
     setDonateModal(null)
   }
 
-  const cardEvent =["king",'king','king','king','king','king','king']
+  const cardEvent =[{ img:"/img/banner1.jpeg"},{ img:"/img/banner2.jpeg"},{ img:"/img/banner3.jpeg"},{ img:"/img/banner4.jpeg"},{ img:"/img/banner7.jpeg"},{ img:"/img/banner8.jpeg"},{ img:"/img/banner9.jpeg"}]
 
   const responsive = {
   desktop: {
@@ -168,6 +168,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay ={true}
+  arrow = {false}
   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
   autoPlaySpeed={4000}
   keyBoardControl={true}
@@ -289,7 +290,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 >
    {cardEvent.map((app,id)=>(
      <div className='lllM1' key={id}>
-      <div className='lllM'><img src="/img/ccc.jpeg" alt="" className='jpl' /></div>
+      <div className='lllM'><img src={app.img} alt="" className='jpl' /></div>
       <div className='cardTheme' >REMEMBER ME, OH LORD </div>
       <div className='namePastor'><span>By</span>  PST. PRINCEDMOON O GODWIN </div>
      </div>
