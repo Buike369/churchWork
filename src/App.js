@@ -12,6 +12,7 @@ import Home from "./components/home"
 import Login from "./components/login"
 import Contact from "./components/contact"
 import AboutUs from "./components/aboutUs"
+import EventPage from "./components/eventpage"
 
 
 const Layout = () => {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs />
+      },
+      {
+        path: "/event/:id",
+        element: <EventPage />
       },
 
     ]

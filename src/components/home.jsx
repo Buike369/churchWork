@@ -11,6 +11,7 @@ import "react-multi-carousel/lib/styles.css";
 import { useLocation } from 'react-router-dom';
 import Modal  from './modal'
 import Donate from "./donate"
+import {Link} from "react-router-dom"
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
     setDonateModal(null)
   }
 
-  const cardEvent =[{ img:"/img/banner1.jpeg"},{ img:"/img/banner2.jpeg"},{ img:"/img/banner3.jpeg"},{ img:"/img/banner4.jpeg"},{ img:"/img/banner7.jpeg"},{ img:"/img/banner8.jpeg"},{ img:"/img/banner9.jpeg"}]
+  const cardEvent =[{ img:"/img/banner1.jpeg",text:"Covenant High Way"},{ img:"/img/banner2.jpeg",text:"Spirit Life Encounter"},{ img:"/img/banner3.jpeg",text:"Encounter"},{ img:"/img/banner4.jpeg",text:"Domineering Grace"},{ img:"/img/banner7.jpeg",text:"Welcome Presentation"},{ img:"/img/banner8.jpeg",text:"Power and Glory"},{ img:"/img/banner9.jpeg",text:"Overtake"}]
 
   const responsive = {
   desktop: {
@@ -64,13 +65,13 @@ const Home = () => {
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    partialVisibilityGutter: 40,
+    partialVisibilityGutter: 100,
     slidesToSlide: 1 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    partialVisibilityGutter: 40,
+    partialVisibilityGutter: 100,
     slidesToSlide: 1 // optional, default to 1.
   } 
 };
@@ -209,7 +210,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Royal Grace Redemption Chapel/ GOD'S Army General Church</div>
+        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="1500" data-aos-easing="linear">Royal Grace Redemption Chapel/ GOD'S Army General Church</div>
        
         
        
@@ -231,18 +232,18 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        <div className='theyAre'>
            <div className='theyAre1'>
             <div className='take2' data-aos="fade-up"
-     data-aos-duration="3000">WELCOME</div>
+     data-aos-duration="1000">WELCOME</div>
             <div></div>
             <div className='take3' data-aos="fade-up"
-     data-aos-duration="3000">Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects.  </div>
+     data-aos-duration="1000">Royal Grace Redemption Chapel/GAG, commissioned by God for a divine purpose, is an Apostolic community passionately dedicated to the Ministry of Reconciliation, healing, and deliverance. Rooted in the Word, Prayer, and Prophecy, we are a zealous and wisdom-packed family fervently engaged in evangelism, soul-winning, humanitarianism, and exploring eternal subjects.  </div>
             <div className='take3' data-aos="fade-up"
-     data-aos-duration="3000">At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead.</div>
+     data-aos-duration="1000">At RGRC/GAG, our unwavering belief in the Word of God and the power of prayer has led to profound physical manifestations of God's power, including miraculous healings and even the resurrection of the dead.</div>
             <div  className='take3' data-aos="fade-up"
-     data-aos-duration="3000"> Every gathering with us is marked by the extraordinary, where miracles, signs, and wonders are a living reality.</div>
+     data-aos-duration="1000"> Every gathering with us is marked by the extraordinary, where miracles, signs, and wonders are a living reality.</div>
             <div className='take3' data-aos="fade-up"
-     data-aos-duration="3000">In our community, the blind see, the lame walk, the barren give birth, and the dead are given a second chance. No matter how dark the night, attending our services ensures that your day will break, and in every hopeless situation, grace and mercy will find you.</div>
+     data-aos-duration="1000">In our community, the blind see, the lame walk, the barren give birth, and the dead are given a second chance. No matter how dark the night, attending our services ensures that your day will break, and in every hopeless situation, grace and mercy will find you.</div>
             <div className='take3' data-aos="fade-up"
-     data-aos-duration="3000">We are a victorious community where failure and defeat are not options; born to win, victory is our prerogative. Join us at GAG, a home many never truly had, where love, compassion, and the passion of Christ create a sweet home in the making.</div>
+     data-aos-duration="1000">We are a victorious community where failure and defeat are not options; born to win, victory is our prerogative. Join us at GAG, a home many never truly had, where love, compassion, and the passion of Christ create a sweet home in the making.</div>
           
           
            </div>
@@ -266,13 +267,14 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
      <div className='HECT'>Happenings, Events and Updates in the Ministry</div>
 <div className='youReM'>
            <Carousel
-  swipeable={false}
-  draggable={false}
+  swipeable={true}
+  draggable={true}
   showDots={true}
   responsive={responsive1}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay ={true}
+  // centerMode={true}
    arrows={false} 
    renderButtonGroupOutside={true}
     customButtonGroup={<ButtonGroup />}
@@ -290,9 +292,11 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 >
    {cardEvent.map((app,id)=>(
      <div className='lllM1' key={id}>
+      <Link to={`/event/${id}`}>
       <div className='lllM'><img src={app.img} alt="" className='jpl' /></div>
-      <div className='cardTheme' >REMEMBER ME, OH LORD </div>
+      <div className='cardTheme' >{app.text} </div>
       <div className='namePastor'><span>By</span>  PST. PRINCEDMOON O GODWIN </div>
+      </Link>
      </div>
      ))}
 </Carousel>
@@ -363,7 +367,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
      <div className='giveLet'>
         <div className='letGive'><img src="/img/past.jpeg" alt="" className='jpl5' /></div>
         <div className='letGive1'>
-          <div className='loremT'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.</div>
+          <div className='loremT'>"At the heart of our bustling city lies the Royal Grace Redemption Chapel, a beacon of hope for souls in need. I was once like Mr. John, tormented by unseen forces, until I found deliverance within its sacred walls. Through the power of God, I experienced redemption and liberation. My testimony spread like wildfire, reaching the ears of others lost in search of meaning. Drawn by the promise of salvation, they too found solace and transformation. Together, we share a journey of faith, forever changed by the divine grace of God in the Royal Grace Redemption Chapel".</div>
         <div className='lllM2' ><span className='testName'>Kingsley Chuks</span> - <span className='Members'>Member</span></div>
         </div>
       </div>
@@ -423,7 +427,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        <div   className='funUnitB'>
         {/* <div className='addMiniRB'></div> */}
           {functionalUnitB.map((app,id)=>(
-         <div className='MiniR   addMiniRB' key={id} data-aos="fade-up"  data-aos-duration="3000" data-aos-easing="linear">
+         <div className='MiniR   addMiniRB' key={id} data-aos="fade-up"  data-aos-duration="1000" data-aos-easing="linear">
      {/* <div className='OurMini1'><img src="/img/ccc.jpeg" alt="" className='OurMini2'/></div> */}
      <div  className="guh">
      <div className='OurMini3  OurMini3B'>{app.name}</div>

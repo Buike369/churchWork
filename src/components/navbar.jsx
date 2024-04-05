@@ -5,6 +5,7 @@ import "../styles/mobileNavbar.css"
 import {useNavigate}  from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight,faSearch} from '@fortawesome/free-solid-svg-icons'
+import {faLinkedinIn,faTwitter,faDiscord,faGithub,faTelegram,faYoutube, faFacebookF} from "@fortawesome/free-brands-svg-icons"
 
 const Header = () => {
 
@@ -19,7 +20,7 @@ const Header = () => {
     window.onscroll =()=>{
         scrollF()
       }
-    
+    const socialLink = [{icon:faTwitter,link:"https://x.com/ChukwubuikeK?t=Ksk86TowzZrQ7X_21swBIg&s=09"},{icon:faFacebookF,link:"https://www.facebook.com/apostleprincedmoon.onyenkpa?mibextid=JRoKGi"},{icon:faTelegram,link:"https://t.me/drmoon_p"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
 
       const scrollF =()=>{
           if(document.body.scrollTop > 100  || document.documentElement.scrollTop > 100 ){
@@ -86,14 +87,23 @@ const Header = () => {
     </label>
      <div className="menuBox">
     <ul className="menuBox24">
-       <li><button className='loginButton'><a className="menuItem34" href="/contact">Contact Us</a></button></li>
-
-
-      <li><a className="menuItem" href="/about">About Us</a></li>
-      <li><a className="menuItem" href="#">Music</a></li>
-      <li><a className="menuItem" href="/">Upcoming Event</a></li>
+      
+      <li className='lineBor'><a className="menuItem" href="/contact">Contact Us</a></li>
+      <li className='lineBor'><a className="menuItem" href="/about">About Us</a></li>
+      <li className='lineBor'><a className="menuItem" href="#">Music</a></li>
+      <li className='lineBor'><a className="menuItem" href="/">Upcoming Event</a></li>
                   
-      <li><a className="menuItem" href="/about">About Us</a></li>
+      <li > 
+        <div className='hotVink'>
+         <div className="hot">
+                {socialLink.map((app,id)=>(
+                <ul key={id} className="hot">
+                    <li> <div className=''><a href={app.link} target="_blank" className="footerIconDivL"><FontAwesomeIcon icon={app.icon}  className="iconHoverColor " style={{fontSize:"15px"}} /></a></div></li>
+                </ul>
+                ))}
+                </div>
+                </div>
+                </li>
     </ul>
     </div>
   </div>

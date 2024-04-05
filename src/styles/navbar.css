@@ -32,6 +32,12 @@ a {
 
 
 }
+.lineBor{
+    border-bottom:1px solid #2f8766 ;
+}
+.hotVink{
+    padding-top:15px
+}
 
 .relativeD{
  position: relative;   
@@ -193,7 +199,7 @@ border: 1px solid #ffffff;
         display: none;
     }
 .NavLogoNa {
-    width: 50%;
+    width: 63%;
 }
     .headerDivFle {
         display: flex;

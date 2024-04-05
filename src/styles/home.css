@@ -433,6 +433,7 @@
     font-weight: 700;
     padding: 5px;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .namePastor {
@@ -682,6 +683,9 @@
     } */
     .lllM1 {
         width: 98%
+    }
+    .lllM{
+        height: 240px;
     }
 
     .ImgLogo {
