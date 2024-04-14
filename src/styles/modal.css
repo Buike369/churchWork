@@ -9,7 +9,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    z-index: 10000;
+    z-index: 20000;
     
 }
 .modal-content{
@@ -18,10 +18,80 @@
     overflow: hidden;
 }
 .d_done{
-    padding:15px 10px;
-    background-color: #fff;
+    padding:20px 20px;
+    background-color: #579f81;
     color:#000;
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
     border-radius: 5px;
+
+}
+.pimpm{
+    color:#fff
+}
+.lijkl{
+    font-weight: 600;
+}
+.transT{
+    padding:10px 15px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 34px;
+    margin-bottom: 10px;
+    color:#fff
+}
+.modalButton{
+    width:100%;
+    max-width: 150px;
+    margin:10px  auto 0 auto;
+    padding:10px 15px;
+    border-radius: 38px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+.modalButton:hover{
+    background-color: #579f81;
+    color:#fff;
+    border: 1px solid #fff;
+}
+.checkB{
+    margin-right: 10px;
+}
+.albelM{
+    color:#fff;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.closeMMM{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+.closeMpp{
+    color:#bee7d8;
+    cursor: pointer;
+}
+.closeMpp:hover{
+    color: #fff;
+    
+}
+.uplo{
+    margin-top: 10px;
+}
+
+.inPP{
+width:100%;
+padding: 10px 5px;
+border-radius: 5px;
+outline: none;
+border: 0;
+}
+.howMuchdeposit{
+    color:#fff;
+    margin-bottom: 10px;
 }
 .modal img{
     width:100%;

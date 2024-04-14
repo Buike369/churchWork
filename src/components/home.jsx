@@ -12,6 +12,7 @@ import { useLocation } from 'react-router-dom';
 import Modal  from './modal'
 import Donate from "./donate"
 import {Link} from "react-router-dom"
+import "../styles/messages.css"
 
 
 const Home = () => {
@@ -210,7 +211,8 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
        <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="1500" data-aos-easing="linear">Royal Grace Redemption Chapel/ GOD'S Army General Church</div>
+                  {/* <div  className='WPI2' data-aos="fade-down"  data-aos-duration="1500" data-aos-easing="linear">Royal Grace Redemption Chapel/ GOD'S Army General Church</div> */}
+        <div  className='WPI2' >Royal Grace Redemption Chapel/ GOD'S Army General Church</div>
        
         
        
@@ -268,7 +270,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 <div className='youReM'>
            <Carousel
   swipeable={true}
-  draggable={true}
+  draggable={false}
   showDots={true}
   responsive={responsive1}
   ssr={true} // means to render carousel on server-side.
@@ -309,6 +311,9 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
      ))} */}
   </div>
 
+  
+  
+
 
 
 
@@ -326,6 +331,8 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 
 
        {/* another Section */}
+
+
 
         <div className='NeEven'>
      <div className='LNPM'>Powerful Testimonies</div>
@@ -384,9 +391,109 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
      </div>
      ))} */}
   </div>
-  <div>
+
+
+  <div className="repper">
+    <div className='psm'>Pastor Quotes</div>
+     <div  className='RM2'>
+    <div className='RM3'></div>
+    <div className='RM3'></div>
+  </div>
+
+ <div className='wrapper'>
+ 
+      
+  <div className='carouselH'>
+    
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/kolo.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 1</p>
+        <p className='haleFP'>"Remember, even in our darkest moments, God's light shines brightest. Have faith and trust in His plan for you."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+       <img src="/img/pasp.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 2</p>
+        <p className='haleFP'>"As we gather for worship today, let's open our hearts to receive the Word of God and His abundant grace."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp1.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 3</p>
+        <p className='haleFP'>"In times of uncertainty, remember that God is our refuge and strength. Lean on Him and find solace in His promises."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp2.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 4</p>
+        <p className='haleFP'>"Dear congregation, let's come together in prayer for those in need, trusting in God's unwavering love and guidance."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp3.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 5</p>
+        <p className='haleFP'>"Wishing you a blessed week ahead, filled with God's joy, peace, and prosperity. Stay faithful and keep shining His light!"</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp4.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 6</p>
+        <p className='haleFP'>"Good morning, beloved! May this day be filled with God's grace and blessings for you and your loved ones."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+      <img src="/img/pasp5.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 7</p>
+        <p className='haleFP'>"As we gather for worship today, let's open our hearts to receive the Word of God and His abundant grace."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp6.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 8</p>
+        <p className='haleFP'>"In times of uncertainty, remember that God is our refuge and strength. Lean on Him and find solace in His promises."</p>
+      </div>
+    </div>
+    <div className='carouselH__item'>
+      <div className='carouselH__item-head'>
+        <img src="/img/pasp.jpeg" alt="" className='ImgLogoLL' />
+      </div>
+      <div className='carouselH__item-body'>
+        <p className='title'>Quotes 9</p>
+        <p className='haleFP'>"Dear congregation, let's come together in prayer for those in need, trusting in God's unwavering love and guidance."</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
   </div>
+  
+
+
   <div className='opOp'>
   <div className='OurMini'>Our Functional Units</div>
   <div  className='RM2'>
@@ -443,7 +550,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
    </div>
       
 
-      {donateModal && <Donate  onClose={handleCloseDonate}  onClick={handleDonateClick}/>}
+      {donateModal && <Donate    onClick={handleDonateClick}/>}
          </div>
   )
 }

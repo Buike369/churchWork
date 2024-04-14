@@ -104,7 +104,7 @@ const Contact = () => {
                             Contact Information
                         </div>
                         <div className='wedDis'>Office Phone: 08069308316</div>
-                        <div className='wedDis'>Email: RoyalGrace@gmail.com</div>
+                        <div className='wedDis'>Email: firebrain61@gmail.com</div>
                         <div className='deed'>Mailing Address:</div>
                         <div className='wedDis'>P.O. Box 1639</div>
                         <div className='wedDis'>Boring, OR 97009</div>

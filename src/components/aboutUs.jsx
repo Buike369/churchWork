@@ -40,7 +40,7 @@ const AboutUs = () => {
          <div className='youFirst'>
        <div className='WelcomePage'>
         <div className='WPI'>
-        <div  className='WPI2' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Vision and Mission  </div>
+        <div  className='load' data-aos="fade-down"  data-aos-duration="3000" data-aos-easing="linear">Vision and Mission  </div>
         <div  className='RM2'>
     <div className='RM3'></div>
     <div className='RM3'></div>
@@ -89,6 +89,8 @@ const AboutUs = () => {
          <div  className='Cbb4 Cbb3'>New Here</div>
           </div>
        </div>
+       <div className='colorbG'></div>
+       <div className='colorbG1'></div>
        </div>
 
     </div>

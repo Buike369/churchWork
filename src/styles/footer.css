@@ -73,7 +73,7 @@
 }
 
 .Weg2 {
-    color: #fff;
+    color: #ced5d2;
     /* text-align: center; */
     font-size: 16px;
     width: 100%;
@@ -82,7 +82,7 @@
 }
 .Weg2A{
     font-size: 14px;
-    color:#ced5d2;
+    color:#a9b3ae;
 }
 .hideMe{
     display:none;
@@ -218,7 +218,7 @@ background-color: #2e5444;
 }
 
 .footerName {
-    color: #ced5d2;
+    color: #8fbba5;
     text-align: left;
     width: 50%;
 }

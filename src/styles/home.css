@@ -29,13 +29,22 @@
 }
 
 .WPI2 {
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    width: 100%;
-    max-width: 56%;
-    margin: 0 auto 5px auto;
+    font-size: 40px; 
+     font-weight: 700; 
+    text-align: center; 
+    color: #ffffff; 
+     width: 100%; 
+     max-width: 56%; 
+     margin: 0 auto 5px auto;
+
+    /* width: 100%;
+        animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 12px;
+        text-overflow: clip; */
 }
 
 .youFirst {
@@ -281,7 +290,8 @@
 
     /* background-color: #000000; */
     /* background-color: #0093E9; */
-    background-image: linear-gradient(160deg, #d3efe6 0%, #80bca8 100%);
+    /* background-image: linear-gradient(160deg, #d3efe6 0%, #80bca8 100%); */
+        background-image: linear-gradient(160deg, #55977b 0%, #5d947d 100%);
     /* background-image: linear-gradient(160deg, #ffffff 0%, #e6f9f4 100%); */
     /* background-image: linear-gradient(160deg, #afe7cb42 0%, #6eaf8d 100%); */
     position: relative;
@@ -314,18 +324,18 @@
     flex-grow: 24%;
     flex-basis: 24%;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
+    background:inherit;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(85 151 123);
     /* background-color: #000;
     background: rgb(74, 172, 100); */
     /* background: linear-gradient(90deg, rgb(148 209 170 / 28%) 0%, rgb(213 233 225 / 31%) 35%, rgb(168 219 186 / 46%) 70%, rgb(147 191 156) 100%); */
 
     color: #fff;
-    background-color: #fff;
+    background-color: inherit;
     /* box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px; */
 }
 
@@ -345,7 +355,7 @@
     font-size: 54px;
     font-weight: 700;
     text-align: center;
-    color: #000
+    color: #fff
 }
 
 .kli {
@@ -360,22 +370,23 @@
 }
 
 .real12 {
-    padding: 8px 12px;
+    padding: 14px 12px;
     background-color: inherit;
     cursor: pointer;
-    color: #000000;
-    background-color: #fff;
-    /* border: 1px solid #0c0d0d; */
-    box-shadow: 0px 8px 26px 2px #93a99c;
+    color: #f3f1f1;
+        background-color: #35604e;
+        /* border: 1px solid #0c0d0d; */
+        box-shadow: 0px 8px 26px 2px #4b7664;
     font-weight: 600;
-    border-radius: 6px;
-    width: 160px;
+    border-radius: 34px;
+    width: 200px;
     margin: 15px auto 0 auto
 }
 
+
 .real14 {
     text-align: center;
-    color: #000000e0;
+    color: #dcebe4;
     margin-top: 15px;
     font-weight: 400;
     font-size: 16px;
@@ -389,14 +400,20 @@
     margin: 30px auto;
     padding-bottom: 30px;
 }
+.ImgLogoLL{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
 .lllM1 {
     width: 250px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #487d67;
     padding-bottom: 10px;
     height: auto;
     border-radius: 8px;
+     border: 1px solid #5b8f79;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: all ease;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
@@ -405,10 +422,11 @@
 .loo {
     width: 98% !important;
     cursor: pointer;
-    background-color: #fff;
+    background-color: inherit;
     padding-bottom: 10px;
     height: auto;
     border-radius: 8px;
+        border: 2px solid rgb(85 151 123);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: all ease;
     /* overflow: hidden; */
@@ -419,8 +437,8 @@
 }
 
 .lllM2 {
-    color: #000;
-    padding: 15px 10px;
+    color: #6bf5bc;
+    padding: 15px 10px 0px 10px;
 
 }
 
@@ -428,7 +446,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
@@ -437,7 +455,7 @@
 }
 
 .namePastor {
-    color: #000;
+    color: #e1dddd;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -475,13 +493,14 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    border:2px solid #55977b;
 }
 
 .giveLet {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 20px 10px
+    gap: 20px;
+    padding: 30px 10px
 }
 .letGive1{
     /* width:70%; */
@@ -495,18 +514,18 @@
 .testName {
     font-size: 22px;
     font-weight: 600;
-    color: #000;
+    color: #95dfbf;
 
 }
 
 .Members {
     font-size: 16px;
-    color: #000;
+    color: #61b793;
     font-weight: 500;
 }
 
 .loremT {
-    color: #000;
+    color: #fff;
     /* white-space: nowrap; */
     /* width:95%; */
     display: -webkit-box;
@@ -534,7 +553,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #256c35;
+    color: #fff;
 
 }
 
@@ -569,10 +588,10 @@
 
 .RM2 {
     width: 100px;
-    margin: 0 auto;
+    margin: 2px auto 15px auto;
     display: flex;
     gap: 6px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .RM3 {
@@ -613,10 +632,10 @@
 }
 
 .postKin {
-    padding: 5px;
+    padding: 7px 10px;
     background-color: #fff;
     color: #000;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -653,7 +672,7 @@
     position: absolute;
     bottom: -4px;
     left: -17px;
-    border-top: 25px solid #29D18B;
+    border-top: 25px solid rgb(85 151 123);
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     transform: rotate(45deg);
@@ -765,8 +784,8 @@
     }
 
     .WPI2 {
-        font-size: 32px;
-        max-width: 100%;
+        font-size:28px; 
+         max-width: 100%;
 
 
     }
@@ -805,5 +824,19 @@
 @media(min-width:769px) {
     .funUnit {
         display: none;
+    }
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
     }
 }

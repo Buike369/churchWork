@@ -5,9 +5,12 @@
     margin: 0 auto;
 }
 .CnkkL{
-    padding:20px 10px;
-    background-color: #fff;
-    color:#000
+    padding: 50px 10px;
+        background-color: #3e705b;
+        position: relative;
+        color: #fff;
+  
+        margin-bottom: 10px;
 }
 .Cbb1{
     font-size: 45px;
@@ -18,13 +21,49 @@
 .Cbb3{
     font-size: 18px;
     text-align: center;
-    color:#000;
+    color:#d3dfdc;
     line-height: 35px;
 }
 .Cbb4{
-    padding:5px 15px;
-    border: 1px solid #000;
-    width:150px;
-    margin:0 auto;
-    border-radius: 8px;
+padding: 5px 15px;
+    border: 1px solid #74cba9;
+    width: 150px;
+    margin: 15px auto 0 auto;
+    border-radius: 36px;
+}
+.colorbG{
+    width: 200PX;
+    height: 200PX;
+    position: absolute;
+    top: 0;
+    background-color: #6aab92;
+  filter: blur(100px);
+}
+.load{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.Cbb4 :hover{
+    background-color: #fff;
+    color:#000
+
+}
+.colorbG1 {
+    width: 200PX;
+    height: 200PX;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    background-color: #6aab92;
+    filter: blur(100px);
+}
+
+@media (max-width:768px){
+    .colorbG, .colorbG1 {
+        filter: blur(170px);
+    }
+    .Cbb1{
+  font-size: 32px;
+    }
 }

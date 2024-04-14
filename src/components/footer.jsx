@@ -124,7 +124,7 @@ useEffect(()=>{
                         <li className='pin pin7'><a href="/about" className='then'>About Us</a></li>
                         <li className='pin  pin6'><a href="/ebook" className='then'>Upcoming Event</a></li>
                         <li className='pin  pin7'><a href="/contact" className='then'>Contact  Us</a></li>
-                        <li className='pin1  pin6'><a href="/about" className='then'>About Us</a></li>
+
                     </ul>
                 </div>
                   <div className='footerFo'>
@@ -174,10 +174,10 @@ useEffect(()=>{
                         <li className='pin pin7'><div className="FooterHead">Activity Photo</div></li>
                         <li className='pin pin6'>
                             <div className='guideDivs'>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
-                                <div  className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
-                                <div className='footerImgS'><img src="/img/ccc.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/ccc.jpeg')}/></div>
+                                <div className='footerImgS'><img src="/img/tomo.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/tomo.jpeg')}/></div>
+                                <div  className='footerImgS'><img src="/img/tomo4.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/tomo4.jpeg')}/></div>
+                                <div className='footerImgS'><img src="/img/tomo1.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/tomo1.jpeg')}/></div>
+                                <div className='footerImgS'><img src="/img/tomo2.jpeg" alt="" className='ImgSrc4' onClick={()=>handleImageClick('/img/tomo2.jpeg')}/></div>
                             </div>
                             </li>
                       
