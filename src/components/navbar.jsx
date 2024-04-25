@@ -70,7 +70,7 @@ const Header = () => {
               <li ><a href="" className="navbar1_link linkAB">Services</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Music</a></li>
                <li ><a href="#" className="navbar1_link linkAB">Event</a></li>
-                <li><a href="#" className="navbar1_link linkAB" style={{color:feedBack1}}>About</a></li>
+                <li><a href="/about" className="navbar1_link linkAB" style={{color:feedBack1}}>About</a></li>
         
           </ul>
           

@@ -88,8 +88,8 @@
     list-style: none;
     background-color: #386955;
     /* background-image: linear-gradient(0deg, #396c57 0, #2d4c3e); */
-    border-left: 1px solid #23644bbf;
-    /* box-shadow: 0px 2px 7px #0b0b1ebf; */
+        /* border-left: 1px solid #1e6047bf; */
+            box-shadow: 0px 2px 7px #13543ebf;
     transition-duration: .25s;
 }
 

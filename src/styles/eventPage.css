@@ -1,0 +1,38 @@
+.kimLim{
+    width:100%;
+    max-width: 1180px;
+    margin:0 auto;
+}
+.kimLim1{
+    width:100%;
+ height:100%;
+ border-radius: 8px;
+}
+.EvrP{
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+}
+.EvrP1{
+    width:78%;
+}
+.EvrP2{
+    width:20%;
+}
+.ImgEvrP{
+    width:100%;
+    height:500px
+}
+.UpComingP{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.UIPos{
+    width:100%;
+    height:150px;
+}
+.UIPosJi{
+    width:100%;
+    height:100%;
+}

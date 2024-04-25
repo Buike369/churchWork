@@ -13,6 +13,7 @@ import Login from "./components/login"
 import Contact from "./components/contact"
 import AboutUs from "./components/aboutUs"
 import EventPage from "./components/eventpage"
+import Testimony from "./components/testimony"
 
 
 const Layout = () => {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/event/:id",
         element: <EventPage />
+      },
+      {
+        path: "/testimony/:id",
+        element: <Testimony />
       },
 
     ]
