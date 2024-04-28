@@ -8,9 +8,26 @@ import {faXmark} from "@fortawesome/free-solid-svg-icons"
 const Donate = ({onClose,onClick}) => {
   const [checkPass,setCheckPass] = useState(true)
   const [checkPass1,setCheckPass1] = useState(true)
+  const [inputValue, setInputValue] = useState('')
+  const [selectCheckbox,setSelectCheckbox] = useState('');
 
   const submitform = ()=>{
   setCheckPass(!checkPass)
+  }
+  const handleChange= (event)=>{
+    setInputValue(event.target.value);
+  }
+
+  const handleCheckbox = (event)=>{
+  setSelectCheckbox(event.target.value);
+  }
+  const handleSubmit =(event)=>{
+  event.preventDefault();
+  if((inputValue.trim()=== '') || (selectCheckbox === '')){
+    
+  }else{
+ setCheckPass(!checkPass)
+  }
   }
     const submitform1 = ()=>{
   setCheckPass1(!checkPass1)
@@ -33,12 +50,12 @@ const Donate = ({onClose,onClick}) => {
         <form action="">
           <div className='closeMMM'><FontAwesomeIcon icon={faXmark}   style={{fontSize:"20px"}} onClick={onClick} className='closeMpp'/></div>
           <div className='howMuchdeposit'> * How much would you like to give? </div>
-          <input type="text" placeholder='$1.00' className='inPP'/>
+          <input type="text" placeholder='$1.00' className='inPP' value={inputValue} onChange={handleChange}/>
            <div className='howMuchdeposit uplo'>* What should the money used for?</div>
-           <div><input type="checkbox"  className='checkB'/><label className='albelM'>Tithes and Offering</label></div>
-            <div><input type="checkbox" className='checkB'/><label className='albelM'>Projects Development</label></div>
-             <div><input type="checkbox"  className='checkB'/><label className='albelM'>Mission work</label></div>
-          <div className='modalButton' onClick={submitform}>Submit</div>
+           <div><input type="checkbox"  className='checkB' value="checkbox1" checked={selectCheckbox === 'checkbox1'} onChange={handleCheckbox} data-label="checkbox 1"/><label className='albelM'>Tithes and Offering</label></div>
+            <div><input type="checkbox" className='checkB' value="checkbox2" checked={selectCheckbox === 'checkbox2'} onChange={handleCheckbox} data-label="checkbox 2"/><label className='albelM'>Projects Development</label></div>
+             <div><input type="checkbox"  className='checkB' value="checkbox3" checked={selectCheckbox === 'checkbox3'} onChange={handleCheckbox} data-label="checkbox 3"/><label className='albelM'>Mission work</label></div>
+          <div className='modalButton' onClick={handleSubmit}>Submit</div>
         </form>
         : <div>
             <form action="">

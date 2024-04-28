@@ -20,7 +20,7 @@ const Header = () => {
     window.onscroll =()=>{
         scrollF()
       }
-    const socialLink = [{icon:faTwitter,link:"https://x.com/ChukwubuikeK?t=Ksk86TowzZrQ7X_21swBIg&s=09"},{icon:faFacebookF,link:"https://www.facebook.com/apostleprincedmoon.onyenkpa?mibextid=JRoKGi"},{icon:faTelegram,link:"https://t.me/drmoon_p"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
+    const socialLink = [{icon:faTwitter,link:"https://x.com/general_pr73766?t=jrwNqQtIljpvZfG0IBbIQA&s=08"},{icon:faFacebookF,link:"https://www.facebook.com/apostleprincedmoon.onyenkpa?mibextid=JRoKGi"},{icon:faTelegram,link:"https://t.me/drmoon_p"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
 
       const scrollF =()=>{
           if(document.body.scrollTop > 100  || document.documentElement.scrollTop > 100 ){

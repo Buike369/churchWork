@@ -3,6 +3,7 @@ import "../styles/modal.css"
 
 
 const Modal = ({imageUrl,onClose}) => {
+
    
 
 

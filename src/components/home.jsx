@@ -259,7 +259,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
            </div>
             <div className='theyAre1'>
               <div className="theyAre2" >
-              <img src="/img/app.jpeg" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
+              <img src="/img/ffc.png" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
               </div>
             </div>
        </div>
@@ -351,7 +351,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
      <div className='HECT'>God is still doing miracles as in the days of old. Experience what God has done in the lives of these brethren.</div>
 <div className='youReM'>
            <Carousel
-  swipeable={false}
+  swipeable={true}
   draggable={false}
   showDots={true}
   responsive={responsive2}

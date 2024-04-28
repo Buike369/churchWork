@@ -59,7 +59,7 @@ const AboutUs = () => {
        <div className='theyAre'>
            <div className='theyAre1'>
               <div className="theyAre2" >
-              <img src="/img/past.jpeg" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
+              <img src="/img/ffc2.png" alt="" className='heyImage'  data-aos="fade-right" data-aos-duration="2000"/>
               </div>
             </div>
            <div className='theyAre1'>
